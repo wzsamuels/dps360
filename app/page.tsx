@@ -1,17 +1,18 @@
 import Image from 'next/image'
 import image1 from "@/public/1.jpg"
-import image2 from "@/public/2.jpg"
-import image3 from "@/public/3.jpg"
-import image4 from "@/public/4.jpg"
+import image2 from "@/public/5.jpg"
+import image3 from "@/public/9.jpg"
+import image4 from "@/public/10.jpg"
 import Link from 'next/link'
 
 export default function Home() {
   return (
     <main className="w-full relative">
       <div className='bg-themeGreen box pb-64'>
-        <h1 className='text-5xl text-white py-8 px-4 text-center font-bold'>Differentials Planet Soccer 360</h1>        
+        <h1 className='text-5xl text-white py-8 px-4 text-center font-bold'>Differentials Planet Soccer 360</h1>
+        <p></p>     
       </div>
-      <Image src={image1} alt="Soccer Image 1" className='max-w-[600px] mx-auto w-full rounded-xl -mt-64 relative z-10'/>
+      <Image src={image1} alt="Soccer Image 1" className='max-w-3xl mx-auto w-full rounded-none md:rounded-xl -mt-64 relative z-10'/>
       <div className='p-4'>
         <div className="flex flex-col-reverse md:flex-row my-16">
           <div className='flex-1'>
@@ -38,7 +39,7 @@ export default function Home() {
 
         <div className="flex flex-col-reverse md:flex-row my-16">
           <div className='flex-1'>
-            <Image src={image2} className='rounded-xl' alt='Image 2'/>
+            <Image src={image4} className='rounded-xl' alt='Image 2'/>
           </div>
           <div className='flex-1 px-2'>
             <h2 className='text-2xl text-center py-4'> Year-Round Programs</h2>      
