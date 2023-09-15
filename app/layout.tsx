@@ -1,9 +1,8 @@
+import Nav from '@/components/Nav'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import logo from "@/public/logo-dark.png" 
-import Image from 'next/image'
-import Link from 'next/link'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,26 +31,17 @@ const navItems = [
   
 ]
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({children,}: {children: React.ReactNode}) {
+
+
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-screen`}>
-        <nav className='w-full bg-themeGreen text-white flex h-16'>
-          <Image src={logo} className='h-full w-auto' alt="DPS Logo"/>
-          <div>
-            {navItems.map(item => 
-              <Link href={item.href} key={item.text}>{item.text}</Link>
-            )}
-          </div>
-        </nav>
+      <body className={`${inter.className} min-h-screen relative`}>
+        <Nav/>
         <main className="pb-16">
           {children}
         </main>
-        <footer className='fixed bottom-0 w-full h-16 bg-themeGreen text-white'>
+        <footer className='absolute bottom-0 w-full bg-themeGreen text-white px-4 py-2'>
           Differentials Planet Soccer 360 | 508 Felicia Street Durham NC 27704 | info@dps360.com|  (336)- 417-7759
         </footer>
       </body>
