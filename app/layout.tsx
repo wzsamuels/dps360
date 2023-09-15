@@ -14,17 +14,22 @@ export const metadata: Metadata = {
 
 const navItems = [
   {
-    text: "Contact",
-    href: "/contact"
-  },
-  {
-    text: "Events",
-    href: "/events"
+    text: "About Us",
+    href: "/about"
   },
   {
     text: "Coaching",
     href: "/coaching"
-  }
+  },
+  {
+    text: "Contact",
+    href: "/contact"
+  },
+  {
+    text: "Programs",
+    href: "/events"
+  },
+  
 ]
 
 export default function RootLayout({
