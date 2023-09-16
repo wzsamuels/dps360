@@ -8,8 +8,16 @@ import { useEffect, useState } from 'react'
 
 const navItems = [
   {
+    text: "About",
+    href: "/about"
+  },
+  {
     text: "Contact",
     href: "/contact"
+  },
+  {
+    text: "Community",
+    href: "/community"
   },
   {
     text: "Events",
