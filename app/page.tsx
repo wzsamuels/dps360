@@ -35,7 +35,7 @@ export default function Home() {
             <p className='text-center py-4'> 
               Ongoing, annual initiatives including open collaborations, partnerships, and sponsorships.
             </p>
-            <Link href="/events" className='py-2 px-4 bg-themeGreen text-white rounded-xl'>Learn More</Link>w
+            <Link href="/events" className='py-2 px-4 bg-themeGreen text-white rounded-xl'>Learn More</Link>
           </div>
         </div>    
 
@@ -43,7 +43,7 @@ export default function Home() {
           <div className='flex-1'>
             <Image src={image4} className='rounded-xl' alt='Image 2'/>
           </div>
-          <div className='flex-1 px-2 flex flex-col items-center justify-center'>s
+          <div className='flex-1 px-2 flex flex-col items-center justify-center'>
             <h2 className='text-2xl text-center py-4'> Year-Round Programs</h2>      
             <p className='text-center py-4'>Soccer camps and tournments for adults and children.</p>
             <Link href="/events" className='py-2 px-4 bg-themeGreen text-white rounded-xl'>Learn More</Link>
