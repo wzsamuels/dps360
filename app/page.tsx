@@ -53,7 +53,7 @@ export default function Home() {
       <div className="p-4 max-w-lg w-full">
         <h1 className="text-3xl text-center">Contact Us</h1>
         <p className="text-center">
-          We'd love to hear from you!
+          We&apos;d love to hear from you!
         </p>
         <p className="text-center">
           Feel free to contact us with any questions or concerns.
