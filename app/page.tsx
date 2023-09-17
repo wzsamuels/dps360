@@ -35,7 +35,7 @@ export default function Home() {
             <p className='text-center py-4'> 
               Ongoing, annual initiatives including open collaborations, partnerships, and sponsorships.
             </p>
-            <Link href="/events" className='py-2 px-4 bg-themeGreen text-white rounded-xl'>Learn More</Link>
+            <Link href="/community" className='py-2 px-4 bg-themeGreen text-white rounded-xl'>Learn More</Link>
           </div>
         </div>    
 
