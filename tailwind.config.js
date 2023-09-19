@@ -1,6 +1,5 @@
-import type { Config } from 'tailwindcss'
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -15,9 +14,21 @@ const config: Config = {
       },
       colors: {
         themeGreen: "#538235"
+      },
+      keyframes: {
+        fromLeft: {
+          'from': {left: '-300px', opacity:"0"},
+          'to': {left: '0', opacity: '1'}
+        },
+        toLeft: {
+          'from': {left: '0', opacity: '1'},
+          'to': {left:'-300px', opacity: '0'}
+        },
+        animation: {
+          fromLeft: 'fromLeft 1s ease-in-out'
+        },
       }
     },
   },
   plugins: [],
 }
-export default config
