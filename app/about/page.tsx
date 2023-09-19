@@ -9,9 +9,7 @@ const AboutPage = () => {
       <div className="absolute w-full  max-w-xl text-center text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <h1 className="text-4xl md:text-5xl">About Differentials Planet Soccer 360</h1>
         <p className="py-4">
-          We know that the buildings are roads we see are not the society but the people who leave in it.
-          Our mission is therefore to continue to promote the unity and growth of the society by helping players
-          of all ages, skill sets, and backgrounds find success and fulfilment in the game of soccer.
+        At Differentials Planet Soccer360 (DPSoccer360), we know that the buildings and the roads we see are not the society but the people who live in it. Our mission is therefore to continue to promote the unity and growth of the society by helping players of all ages, skill sets, and backgrounds find success and fulfilment in the game of soccer.
         </p>
         <h2 className="text-2xl">How we do it:</h2>
         <p className="py-4">
