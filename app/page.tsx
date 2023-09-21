@@ -1,3 +1,7 @@
+'use client'
+
+import {Fade} from "react-awesome-reveal";
+
 import Image from 'next/image'
 import image1 from "@/public/1.jpg"
 import image2 from "@/public/5.jpg"
@@ -14,7 +18,8 @@ export default function Home() {
       </div>
       <Image src={image1} alt="Soccer Image 1" className='max-w-3xl mx-auto w-full rounded-none md:rounded-xl -mt-64 relative z-10'/>
       <div className='p-4'>
-        <div className="flex flex-col-reverse md:flex-row my-16">
+
+        <Fade className="flex flex-col-reverse md:flex-row my-16">
           <div className='flex-1'>
             <Image src={image2} className='rounded-xl' alt='Image 2'/>
           </div>
@@ -23,9 +28,9 @@ export default function Home() {
             <p className='text-center py-4'>We have customized trainings that meet your needs or align with your developmental journey. Working with us gives that safety and most impact on your way to achieving your fitness goals and being a better player. </p>        
             <Link href="/coaching" className='py-2 px-4 bg-themeGreen text-white rounded-xl'>Learn More</Link>
           </div>
-        </div>
+        </Fade>
 
-        <div className="flex flex-col-reverse md:flex-row-reverse my-16">
+        <Fade className="flex flex-col-reverse md:flex-row-reverse my-16">
           <div className='flex-1'>
             <Image src={image3} className='rounded-xl' alt='Image 3'/>
           </div>
@@ -36,9 +41,9 @@ export default function Home() {
             </p>
             <Link href="/community" className='py-2 px-4 bg-themeGreen text-white rounded-xl'>Learn More</Link>
           </div>
-        </div>    
+        </Fade>    
 
-        <div className="flex flex-col-reverse md:flex-row my-16">
+        <Fade className="flex flex-col-reverse md:flex-row my-16">
           <div className='flex-1'>
             <Image src={image4} className='rounded-xl' alt='Image 2'/>
           </div>
@@ -47,20 +52,20 @@ export default function Home() {
             <p className='text-center py-4'>Soccer camps and tournments for adults and children.</p>
             <Link href="/events" className='py-2 px-4 bg-themeGreen text-white rounded-xl'>Learn More</Link>
           </div>
-        </div>
-        <div className="w-full flex justify-center">
-      <div className="p-4 max-w-lg w-full">
-        <h1 className="text-3xl text-center">Contact Us</h1>
-        <p className="text-center">
-          We&apos;d love to hear from you!
-        </p>
-        <p className="text-center">
-          Feel free to contact us with any questions or concerns.
-        </p>
-        <p className="text-center"></p>
-        <ContactForm/>
-      </div>
-    </div>
+        </Fade>
+        <Fade className="w-full flex justify-center">
+          <div className="p-4 max-w-lg w-full">
+            <h1 className="text-3xl text-center">Contact Us</h1>
+            <p className="text-center">
+              We&apos;d love to hear from you!
+            </p>
+            <p className="text-center">
+              Feel free to contact us with any questions or concerns.
+            </p>
+            <p className="text-center"></p>
+            <ContactForm/>
+          </div>
+        </Fade>
       </div>
     </main>
   )
