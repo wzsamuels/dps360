@@ -30,10 +30,10 @@ const CommunityPage = () => {
         <h2 className="py-4 text-3xl max-w-2xl mx-auto my-8">City of Durham Neighborhood Improvement Services International Soccer Tournament</h2>
         <Image src={community2} alt="Image 1" className="w-full max-w-2xl h-auto mx-auto"/>
         <div className="flex flex-wrap justify-center items-center gap-4 my-4 max-w-[1200px] mx-auto">
-          <Image onClick={() => {setModalOpen(true); setModalContent(community1)}} src={community1} alt="Image 1" className="w-full max-w-xl h-full max-h-[36rem] object-cover aspect-square"/>
+          <Image onClick={() => {setModalOpen(true); setModalContent(community1)}} src={community1} alt="Image 1" className="w-full max-w-xl h-full max-h-[36rem] object-cover aspect-square hover:cursor-pointer hover:opacity-80"/>
           <Image onClick={() => {setModalOpen(true); setModalContent(community5)}} src={community5} alt="Image 1" className="w-full max-w-xl h-full max-h-[36rem] object-cover aspect-square hover:cursor-pointer hover:opacity-80"/>
-          <Image onClick={() => {setModalOpen(true); setModalContent(community3)}} src={community3} alt="Image 1" className="w-full max-w-xl h-full max-h-[36rem] object-cover aspect-square"/>
-          <Image onClick={() => {setModalOpen(true); setModalContent(community4)}} src={community4} alt="Image 1" className="w-full max-w-xl h-full max-h-[36rem] object-cover aspect-square"/>
+          <Image onClick={() => {setModalOpen(true); setModalContent(community3)}} src={community3} alt="Image 1" className="w-full max-w-xl h-full max-h-[36rem] object-cover aspect-square hover:cursor-pointer hover:opacity-80"/>
+          <Image onClick={() => {setModalOpen(true); setModalContent(community4)}} src={community4} alt="Image 1" className="w-full max-w-xl h-full max-h-[36rem] object-cover aspect-square hover:cursor-pointer hover:opacity-80"/>
         </div>
       </div>
       {
