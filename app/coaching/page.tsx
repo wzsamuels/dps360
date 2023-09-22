@@ -1,6 +1,7 @@
 import Image from "next/image"
 import hero from "@/public/3.jpg"
 import Hero from "@/components/Hero"
+import coaching1 from "@/public/coaching01.jpg"
 
 const CoachingPage = () => {
   return (
@@ -26,7 +27,7 @@ const CoachingPage = () => {
           <div className="bg-themeGreen p-2 text-white">$70 per session</div>
         </div>      
         <div>
-        <h2 className="text-2xl text-center mt-16 mb-4">Team Rates</h2>
+          <h2 className="text-2xl text-center mt-16 mb-4">Team Rates</h2>
           <div className="grid grid-cols-3 grid-rows-3 rounded-md border-themeGreen border max-w-xl ">
           <div className="bg-themeGreen text-white py-2 px-4"></div>
           <div className="bg-themeGreen text-white font-bold py-2 px-4">30 Minute Session</div>
@@ -39,6 +40,9 @@ const CoachingPage = () => {
             <div className="bg-themeGreen p-2 text-white">$250 per session</div>
           </div>
         </div>
+        <div className="my-16">
+          <Image src={coaching1} alt="Coaching image w-full h-full "/>
+          </div>
       </div>
     </div>
   )
