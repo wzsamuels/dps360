@@ -2,6 +2,8 @@ import Image from "next/image"
 import hero from "@/public/3.jpg"
 import Hero from "@/components/Hero"
 import coaching1 from "@/public/coaching01.jpg"
+import { Teko } from "next/font/google"
+const teko = Teko({ subsets: ['latin'], weight: '400' })
 
 const CoachingPage = () => {
   return (

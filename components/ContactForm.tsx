@@ -24,7 +24,7 @@ const ContactForm = () => {
       body
     };
 
-    const response = await fetch('/api/email', requestOptions)
+    const response = await fetch('/email', requestOptions)
     const responseData = await response.json();
     console.log(responseData.$metadata);
 

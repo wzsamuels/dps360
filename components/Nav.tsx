@@ -66,22 +66,22 @@ const Nav = () => {
 
   const navClass = scrollPosition > 0 ? "bg-white text-themeGreen" : "bg-themeGreen text-white";
 
-  // <Link href="https://www.instagram.com/dpsoccer360/"/>
-
   return (
     <>
       <nav className={`${navClass} w-full flex justify-between h-16 sticky top-0 transition-all duration-300 z-20`}>
-        <div className="flex">
-          <button onClick={handleSidebarTrigger} className={'md:hidden justify-self-start text-2xl p-4'}>☰</button>
-          <Link href='/'>
-            {
-              scrollPosition > 0 ?
-              <Image src={logoLight} className='h-full w-auto' alt="DPS Logo"/>
-              :
-              <Image src={logo} className='h-full w-auto' alt="DPS Logo"/>
-            }
-          </Link>
-        </div>
+          <div className="flex">
+          <Slide direction="left">
+            <button onClick={handleSidebarTrigger} className={'md:hidden justify-self-start text-2xl p-4'}>☰</button>
+            <Link href='/'>
+              {
+                scrollPosition > 0 ?
+                <Image src={logoLight} className='h-full w-auto' alt="DPS Logo"/>
+                :
+                <Image src={logo} className='h-full w-auto' alt="DPS Logo"/>
+              }
+            </Link>
+            </Slide>
+          </div>
         <div className='md:flex items-center justify-center w-full hidden'>
           {navItems.map((item, index) =>
           <Slide direction="down" key={item.text} delay={index * 100}>
@@ -89,9 +89,11 @@ const Nav = () => {
           </Slide>
           )}
         </div>
-        <Link href="https://www.instagram.com/dpsoccer360/" className="p-4">
-          <Image src={instagramLogoWhite} className='h-6 w-6' alt="Instagram Logo"/>
-        </Link>
+        <Slide direction="right" className="p-4">
+          <Link href="https://www.instagram.com/dpsoccer360/">
+            <Image src={instagramLogoWhite} className='h-6 w-6' alt="Instagram Logo"/>
+          </Link>
+          </Slide>
       </nav>
       {
           showSidebar &&
