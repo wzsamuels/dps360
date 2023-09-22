@@ -1,5 +1,6 @@
 'use client'
 
+import { Slide } from "react-awesome-reveal";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from 'react'
@@ -11,15 +12,13 @@ import instagramLogoWhite from "@/public/instagram-white.svg"
 
 const navItems = [
   {
+    text: "Home",
+    href: "/"
+  },
+  {
     text: "About",
     href: "/about"
   },
-  /*
-  {
-    text: "Contact",
-    href: "/contact"
-  },
-  */
   {
     text: "Community",
     href: "/community"
@@ -84,8 +83,10 @@ const Nav = () => {
           </Link>
         </div>
         <div className='md:flex items-center justify-center w-full hidden'>
-          {navItems.map(item => 
-            <Link className='px-4 py-2 hover:text-gray-200'  href={item.href} key={item.text}>{item.text}</Link>
+          {navItems.map((item, index) =>
+          <Slide direction="down" key={item.text} delay={index * 100}>
+            <Link className='px-4 py-2 hover:text-gray-200'  href={item.href} >{item.text}</Link>
+          </Slide>
           )}
         </div>
         <Link href="https://www.instagram.com/dpsoccer360/" className="p-4">
