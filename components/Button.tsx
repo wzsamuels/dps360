@@ -2,7 +2,7 @@ import React, {ReactNode} from "react"
 
 interface ButtonProps {
   children: ReactNode
-  className: string
+  className?: string
   [x: string]: any
 }
 
