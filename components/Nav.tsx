@@ -8,7 +8,8 @@ import { usePathname } from 'next/navigation';
 
 import logo from "@/public/logo-dark.png" 
 import logoLight from "@/public/logo-white.png" 
-import instagramLogoWhite from "@/public/instagram-white.svg"
+import instagramWhite from "@/public/instagram-white.svg"
+import instagramGreen from "@/public/instagram-green.svg"
 
 const navItems = [
   {
@@ -68,7 +69,7 @@ const Nav = () => {
 
   return (
     <>
-      <nav className={`${navClass} w-full flex justify-between h-16 sticky top-0 transition-all duration-300 z-20`}>
+      <nav className={`${navClass} w-full flex justify-between h-16 sticky top-0 z-20`}>
           <div className="flex">
           <Slide direction="left">
             <button onClick={handleSidebarTrigger} className={'md:hidden justify-self-start text-2xl p-4'}>☰</button>
@@ -84,16 +85,27 @@ const Nav = () => {
           </div>
         <div className='md:flex items-center justify-center w-full hidden'>
           {navItems.map((item, index) =>
-          <Slide direction="down" key={item.text} delay={index * 100}>
-            <Link className='px-4 py-2 hover:text-gray-200'  href={item.href} >{item.text}</Link>
-          </Slide>
+            <Slide direction="down" key={item.text} delay={index * 100}>
+              <Link
+                className={`px-4 py-2 mx-1 relative after:transition after:absolute after:w-full after:right-1/2
+                          after:translate-x-[0%] after:hover:h-[2px] after:top-[100%] after:left-0 after:hover:bg-white
+                          ${pathname === item.href && 'after:h-[2px] after:bg-white'}`}
+                href={item.href}>
+                  {item.text}
+                </Link>
+            </Slide>
           )}
         </div>
         <Slide direction="right" className="p-4">
           <Link href="https://www.instagram.com/dpsoccer360/">
-            <Image src={instagramLogoWhite} className='h-6 w-6' alt="Instagram Logo"/>
+            {
+              scrollPosition > 0 ?
+                <Image src={instagramGreen} className='h-6 w-6' alt="Instagram Logo"/>
+                :
+                <Image src={instagramWhite} className='h-6 w-6' alt="Instagram Logo"/>
+            }
           </Link>
-          </Slide>
+        </Slide>
       </nav>
       {
           showSidebar &&
@@ -110,7 +122,7 @@ const Nav = () => {
                       <Link
                         className={`relative after:transition after:absolute after:w-full after:right-1/2
                           after:translate-x-[0%] after:hover:h-[2px] after:top-[100%] after:left-0 after:hover:bg-white
-                          ${pathname === link.href ? 'after:h-[2px] after:bg-white' : 'after:h-[1px] after:bg-gray-500'}`}
+                          ${pathname === link.href && 'after:h-[2px] after:bg-white'}`}
                             href={link.href}
                       >
                         {link.text}
