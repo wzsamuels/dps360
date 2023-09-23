@@ -4,6 +4,7 @@ import Image from 'next/image';
 import event1 from '@/public/event01.jpg'
 import event2 from '@/public/event02.jpg'
 import event3 from '@/public/event03.jpg'
+import event4 from '@/public/about05.jpg'
 import stadium1 from "@/public/stadium1.jpg"
 import stadium2 from "@/public/stadium2.jpg"
 import stadium3 from "@/public/stadium4.jpg"
@@ -17,7 +18,7 @@ const EventPage = () => {
   return (
     <div className='text-center p-2 md:p-4'>
       <Slide direction='down'>
-        <h1 className={`${teko.className} text-5xl md:text-6xl py-6`}>Year Round Programs</h1>      
+        <h1 className={`${teko.className} text-5xl md:text-6xl my-6`}>Year Round Programs</h1>      
       </Slide>
       <Fade>
         <Image src={event1} className='w-full h-full rounded-xl mx-auto max-w-5xl' alt='Image 1'/>
@@ -44,6 +45,7 @@ const EventPage = () => {
         </Slide>
         <Fade>
           <Image src={event3} alt="image" className='w-full h-full rounded-xl mx-auto my-8 max-w-4xl'/>
+          <Image src={event4} alt="image" className='w-full h-full rounded-xl mx-auto my-8 max-w-4xl'/>
           </Fade>
       </section>
 
