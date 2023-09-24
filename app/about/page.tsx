@@ -16,7 +16,7 @@ const teko = Teko({ subsets: ['latin'], weight: '400' })
 
 const AboutPage = () => {
   return (
-    <div className='text-center p-2 md:p-4 w-full mx-auto max-w-5xl'>
+    <div className='text-center p-0 sm:p-2 md:p-4 w-full mx-auto max-w-5xl'>
       <section className='my-12'>
         <Slide direction='down'>
           <h1 className={`${teko.className} text-5xl md:text-6xl my-6`}>Who We Are</h1>

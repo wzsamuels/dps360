@@ -11,7 +11,7 @@ const teko = Teko({ subsets: ['latin'], weight: '400' })
 
 const CoachingPage = () => {
   return (
-    <div className='text-center p-2 md:p-4 flex flex-col items-center'>
+    <div className='text-center p-0 sm:p-2 md:p-4 flex flex-col items-center'>
       <Slide direction='down'>
         <h1 className={`${teko.className} text-5xl md:text-6xl my-6`}>Individiual and Team Coaching</h1>
       </Slide>

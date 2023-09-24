@@ -16,7 +16,7 @@ const teko = Teko({ subsets: ['latin'], weight: '400' })
 
 export default function Home() {
   return (
-    <div className='text-center p-2 md:p-4 w-full'>
+    <div className='text-center p-0 sm:p-2 md:p-4 w-full'>
       <section className="my-12">
         <Slide direction="down">
           <h1 className={`${teko.className} text-4xl md:text-5xl text-center my-4`}>Helping players of all ages, skill sets, and backgrounds find success and fulfilment in the game of soccer.</h1>      
