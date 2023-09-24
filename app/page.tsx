@@ -22,7 +22,7 @@ export default function Home() {
           <h1 className={`${teko.className} text-4xl md:text-5xl text-center my-4`}>Helping players of all ages, skill sets, and backgrounds find success and fulfilment in the game of soccer.</h1>      
           </Slide>
         <Fade>
-          <Image src={image1}  className='w-full h-full rounded-xl mx-auto my-6 max-w-5xl' alt='Image 1'/>
+          <Image src={image1}  className='w-full h-full rounded-none sm:rounded-xl mx-auto my-6 max-w-5xl' alt='Image 1'/>
         </Fade>
       </section>
 
@@ -37,7 +37,7 @@ export default function Home() {
           <LinkButton href="/coaching" >Learn More</LinkButton>
         </Slide>
         <Fade>
-          <Image src={image2} className='w-full h-full rounded-xl mx-auto my-4 max-w-5xl' alt='Image 1'/>
+          <Image src={image2} className='w-full h-full rounded-none sm:rounded-xl mx-auto my-4 max-w-5xl' alt='Image 1'/>
         </Fade>
       </section>
 
@@ -52,7 +52,7 @@ export default function Home() {
           <LinkButton href="/community" >Learn More</LinkButton>
         </Slide>
         <Fade className='w-full max-w-[1800px] mx-auto'>
-          <Image src={image3} className='w-full h-full rounded-xl mx-auto my-4 max-w-5xl' alt='Image 3'/>
+          <Image src={image3} className='w-full h-full rounded-none sm:rounded-xl mx-auto my-4 max-w-5xl' alt='Image 3'/>
         </Fade>
       </section>
 
@@ -67,7 +67,7 @@ export default function Home() {
           <LinkButton href="/events">Learn More</LinkButton>
         </Slide>
         <Fade className='w-full max-w-[1800px] mx-auto'>
-          <Image src={image4}  className='w-full h-full rounded-xl mx-auto my-4 max-w-5xl' alt='Image 4'/>
+          <Image src={image4}  className='w-full h-full rounded-none sm:rounded-xl mx-auto my-4 max-w-5xl' alt='Image 4'/>
         </Fade>
       </section>
 

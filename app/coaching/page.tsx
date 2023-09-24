@@ -16,7 +16,7 @@ const CoachingPage = () => {
         <h1 className={`${teko.className} text-5xl md:text-6xl my-6`}>Individiual and Team Coaching</h1>
       </Slide>
       <Fade>
-        <Image src={coaching1} className='w-full h-full rounded-xl mx-auto max-w-5xl' alt='Image 1'/>
+        <Image src={coaching1} className='w-full h-full rounded-none sm:rounded-xl mx-auto max-w-5xl' alt='Image 1'/>
       </Fade>
 
       <section className='my-12 max-w-5xl'>
@@ -29,7 +29,7 @@ const CoachingPage = () => {
           </p>
         </Slide>
         <Fade>
-          <Image src={coaching2} className='w-full h-full rounded-xl mx-auto my-8 max-w-5xl' alt='Image 1'/>
+          <Image src={coaching2} className='w-full h-full rounded-none sm:rounded-xl mx-auto my-8 max-w-5xl' alt='Image 1'/>
         </Fade>
       </section>
 
@@ -53,7 +53,7 @@ const CoachingPage = () => {
       </section>
 
       <Fade>
-        <Image src={coaching5} className='w-full h-full rounded-xl mx-auto my-8 max-w-5xl' alt='Image 1'/>
+        <Image src={coaching5} className='w-full h-full rounded-none sm:rounded-xl mx-auto my-8 max-w-5xl' alt='Image 1'/>
       </Fade>
 
       <section className="z-10">
@@ -76,7 +76,7 @@ const CoachingPage = () => {
       </section>
 
       <Fade className="my-16">
-        <Image src={coaching4} className='w-full h-full rounded-xl mx-auto my-8 max-w-5xl' alt="Coaching image w-full h-full "/>
+        <Image src={coaching4} className='w-full h-full rounded-none sm:rounded-xl mx-auto my-8 max-w-5xl' alt="Coaching image w-full h-full "/>
       </Fade>
     </div>
   )

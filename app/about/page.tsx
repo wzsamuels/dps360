@@ -27,8 +27,8 @@ const AboutPage = () => {
         </p>
         </Slide>
         <Fade>
-          <Image src={about1} className='w-full h-full rounded-xl mx-auto my-8 max-w-4xl' alt='Image 1'/>
-          <Image src={about5} className='w-full h-full rounded-xl mx-auto my-8 max-w-4xl' alt='Image 1'/>
+          <Image src={about1} className='w-full h-full rounded-none sm:rounded-xl mx-auto my-8 max-w-4xl' alt='Image 1'/>
+          <Image src={about5} className='w-full h-full rounded-none sm:rounded-xl mx-auto my-8 max-w-4xl' alt='Image 1'/>
         </Fade>
       </section>
 
@@ -42,8 +42,8 @@ const AboutPage = () => {
           </p>
         </Slide>
         <Fade>
-          <Image src={about2} alt="" className='w-full h-full rounded-xl mx-auto my-8 max-w-4xl'/>
-          <Image src={about6} className='w-full h-full rounded-xl mx-auto my-8 max-w-4xl' alt='Image 1'/>
+          <Image src={about2} alt="" className='w-full h-full rounded-none sm:rounded-xl mx-auto my-8 max-w-4xl'/>
+          <Image src={about6} className='w-full h-full rounded-none sm:rounded-xl mx-auto my-8 max-w-4xl' alt='Image 1'/>
         </Fade>
       </section>
 
@@ -57,8 +57,8 @@ const AboutPage = () => {
           </p>
         </Slide>
         <Fade>
-          <Image src={about3} alt="" className='w-full h-full rounded-xl mx-auto my-8 max-w-4xl'/>
-          <Image src={about4} alt="" className='w-full h-full rounded-xl mx-auto my-8 max-w-4xl'/>
+          <Image src={about3} alt="" className='w-full h-full rounded-none sm:rounded-xl mx-auto my-8 max-w-4xl'/>
+          <Image src={about4} alt="" className='w-full h-full rounded-none sm:rounded-xl mx-auto my-8 max-w-4xl'/>
         </Fade>
       </section>
 
@@ -72,9 +72,9 @@ const AboutPage = () => {
           </p>
         </Slide>
         <Fade>
-          <Image src={about7} className='w-full h-full rounded-xl mx-auto my-8 max-w-4xl' alt='Image 1'/>
-          <Image src={about8} className='w-full h-full rounded-xl mx-auto my-8 max-w-4xl' alt='Image 1'/>
-          <Image src={about9} className='w-full h-full rounded-xl mx-auto my-8 max-w-4xl' alt='Image 1'/>
+          <Image src={about7} className='w-full h-full rounded-none sm:rounded-xl mx-auto my-8 max-w-4xl' alt='Image 1'/>
+          <Image src={about8} className='w-full h-full rounded-none sm:rounded-xl mx-auto my-8 max-w-4xl' alt='Image 1'/>
+          <Image src={about9} className='w-full h-full rounded-none sm:rounded-xl mx-auto my-8 max-w-4xl' alt='Image 1'/>
         </Fade>
       </section>
     </div>
