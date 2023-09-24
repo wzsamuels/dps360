@@ -25,7 +25,7 @@ const navItems = [
     href: "/community"
   },
   {
-    text: "Events",
+    text: "Programs",
     href: "/events"
   },
   {
