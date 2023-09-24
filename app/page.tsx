@@ -22,7 +22,10 @@ export default function Home() {
           <h1 className={`${teko.className} text-4xl md:text-5xl text-center my-4`}>Helping players of all ages, skill sets, and backgrounds find success and fulfilment in the game of soccer.</h1>      
           </Slide>
         <Fade>
-          <Image src={image1}  className='w-full h-full rounded-none sm:rounded-xl mx-auto my-6 max-w-5xl' alt='Image 1'/>
+        <video autoPlay loop controls muted className='w-full h-full rounded-none sm:rounded-xl mx-auto max-w-5xl'>
+            <source src={"training.mov"} type="video/mp4" />
+          </video>
+          {/*<Image src={image1}  className='w-full h-full rounded-none sm:rounded-xl mx-auto my-6 max-w-5xl' alt='Image 1'/>*/}
         </Fade>
       </section>
 

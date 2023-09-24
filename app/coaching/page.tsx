@@ -5,7 +5,6 @@ import coaching1 from "@/public/coaching01.jpg"
 import coaching2 from "@/public/coaching02.jpg"
 import coaching4 from "@/public/coaching04.jpg"
 import coaching5 from "@/public/coaching05.jpg"
-
 import { Teko } from "next/font/google"
 import { Fade, Slide } from "react-awesome-reveal"
 const teko = Teko({ subsets: ['latin'], weight: '400' })
@@ -17,7 +16,6 @@ const CoachingPage = () => {
         <h1 className={`${teko.className} text-5xl md:text-6xl my-6`}>Individiual and Team Coaching</h1>
       </Slide>
       <Fade>
-
         <Image src={coaching1} className='w-full h-full rounded-none sm:rounded-xl mx-auto max-w-5xl' alt='Image 1'/>
       </Fade>
 
@@ -31,9 +29,7 @@ const CoachingPage = () => {
           </p>
         </Slide>
         <Fade>
-          <video autoPlay loop controls muted className='w-full h-full rounded-none sm:rounded-xl mx-auto max-w-5xl'>
-            <source src={"training.mov"} type="video/mp4" />
-          </video>
+          <Image src={coaching2} className='w-full h-full rounded-none sm:rounded-xl mx-auto my-8 max-w-5xl' alt='Image 1'/>
         </Fade>
       </section>
 
