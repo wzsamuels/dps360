@@ -16,9 +16,11 @@ const teko = Teko({ subsets: ['latin'], weight: '400' })
 
 export default function Home() {
   return (
-    <div className='text-center p-2 md:p-4'>
+    <div className='text-center p-2 md:p-4 w-full'>
       <section className="my-12">
-        <h1 className={`${teko.className} text-4xl md:text-5xl text-center my-4`}>Helping players of all ages, skill sets, and backgrounds find success and fulfilment in the game of soccer.</h1>      
+        <Slide direction="down">
+          <h1 className={`${teko.className} text-4xl md:text-5xl text-center my-4`}>Helping players of all ages, skill sets, and backgrounds find success and fulfilment in the game of soccer.</h1>      
+          </Slide>
         <Fade>
           <Image src={image1}  className='w-full h-full rounded-xl mx-auto my-6 max-w-5xl' alt='Image 1'/>
         </Fade>
@@ -29,7 +31,7 @@ export default function Home() {
           <h2 className={`${teko.className} text-4xl text-center my-4`}>Personal Training Booking</h2>      
         </Slide>
         <Slide direction="right">
-          <p className='text-center py-4'>We have customized trainings that meet your needs or align with your developmental journey. Working with us gives that safety and most impact on your way to achieving your fitness goals and being a better player. </p>        
+          <p className='text-center py-4 max-w-5xl mx-auto'>We have customized trainings that meet your needs or align with your developmental journey. Working with us gives that safety and most impact on your way to achieving your fitness goals and being a better player. </p>        
         </Slide>
         <Slide direction="down" className="flex w-full justify-center my-4">
           <LinkButton href="/coaching" >Learn More</LinkButton>
@@ -50,7 +52,7 @@ export default function Home() {
           <LinkButton href="/community" >Learn More</LinkButton>
         </Slide>
         <Fade className='w-full max-w-[1800px] mx-auto'>
-          <Image src={image3} className='w-full h-full rounded-xl' alt='Image 3'/>
+          <Image src={image3} className='w-full h-full rounded-xl mx-auto my-4 max-w-5xl' alt='Image 3'/>
         </Fade>
       </section>
 
@@ -65,7 +67,7 @@ export default function Home() {
           <LinkButton href="/events">Learn More</LinkButton>
         </Slide>
         <Fade className='w-full max-w-[1800px] mx-auto'>
-          <Image src={image4} className='w-full h-full rounded-xl' alt='Image 4'/>
+          <Image src={image4}  className='w-full h-full rounded-xl mx-auto my-4 max-w-5xl' alt='Image 4'/>
         </Fade>
       </section>
 
