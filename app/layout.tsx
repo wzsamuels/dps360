@@ -19,7 +19,8 @@ export default function RootLayout({children,}: {children: React.ReactNode}) {
           {children}
         </main>
         <footer className='text-center absolute bottom-0 w-full text-[.9rem] md:text-base p-1 md:p-4 '>
-          Differentials Planet Soccer 360 | 508 Felicia Street Durham NC 27704 | info@dpsoccer360.com | (336) 417-7759
+          <hr className='w-full border-white py-2'/>
+          Differentials Planet Soccer 360 | 508 Felicia Street Durham NC 27704 | info@dpsoccer360.com | (336) 417-7759 | Website by <a className='underline' href="https://twinsilverdesign.com" target="_blank" rel="noopener noreferrer">Twin Silver</a>
         </footer>
       </body>
     </html>
