@@ -21,11 +21,10 @@ export default function Home() {
         <Slide direction="down">
           <h1 className={`${teko.className} text-4xl md:text-5xl text-center my-4`}>Helping players of all ages, skill sets, and backgrounds find success and fulfilment in the game of soccer.</h1>      
           </Slide>
-        <Fade>
-        <video autoPlay loop controls muted className='w-full h-full rounded-none sm:rounded-xl mx-auto max-w-5xl'>
+        <Fade fraction={0.25} duration={2000} damping={0.5}>
+          <video autoPlay loop controls muted className='w-full h-full rounded-none sm:rounded-xl mx-auto max-w-5xl'>
             <source src={"training.mov"} type="video/mp4" />
-          </video>
-          {/*<Image src={image1}  className='w-full h-full rounded-none sm:rounded-xl mx-auto my-6 max-w-5xl' alt='Image 1'/>*/}
+          </video>        
         </Fade>
       </section>
 
@@ -39,7 +38,7 @@ export default function Home() {
         <Slide direction="down" className="flex w-full justify-center my-4">
           <LinkButton href="/coaching" >Learn More</LinkButton>
         </Slide>
-        <Fade>
+        <Fade fraction={0.25} duration={2000} damping={0.5}>
           <Image src={image2} className='w-full h-full rounded-none sm:rounded-xl mx-auto my-4 max-w-5xl' alt='Image 1'/>
         </Fade>
       </section>
@@ -54,7 +53,7 @@ export default function Home() {
         <Slide direction="down" className="flex w-full justify-center my-4">    
           <LinkButton href="/community" >Learn More</LinkButton>
         </Slide>
-        <Fade className='w-full max-w-[1800px] mx-auto'>
+        <Fade fraction={0.25} duration={2000} damping={0.5}>
           <Image src={image3} className='w-full h-full rounded-none sm:rounded-xl mx-auto my-4 max-w-5xl' alt='Image 3'/>
         </Fade>
       </section>
@@ -69,12 +68,12 @@ export default function Home() {
         <Slide direction="down"  className="flex w-full justify-center my-4">
           <LinkButton href="/events">Learn More</LinkButton>
         </Slide>
-        <Fade className='w-full max-w-[1800px] mx-auto'>
+        <Fade fraction={0.25} duration={2000} damping={0.5} className='w-full max-w-[1800px] mx-auto'>
           <Image src={image4}  className='w-full h-full rounded-none sm:rounded-xl mx-auto my-4 max-w-5xl' alt='Image 4'/>
         </Fade>
       </section>
 
-      <Fade className="w-full flex justify-center">
+      <Fade fraction={0.25} duration={2000} damping={0.5} className="w-full flex justify-center">
         <div className="p-4 max-w-lg w-full">
           <h3 className={`${teko.className} text-5xl text-center`}>Contact Us</h3>
           <p className="text-center my-2">We&apos;d love to hear from you!</p>

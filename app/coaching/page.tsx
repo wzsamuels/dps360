@@ -15,7 +15,7 @@ const CoachingPage = () => {
       <Slide direction='down'>
         <h1 className={`${teko.className} text-5xl md:text-6xl my-6`}>Individiual and Team Coaching</h1>
       </Slide>
-      <Fade>
+      <Fade fraction={0.25} duration={2000} damping={0.5}>
         <Image src={coaching1} className='w-full h-full rounded-none sm:rounded-xl mx-auto max-w-5xl' alt='Image 1'/>
       </Fade>
 
@@ -28,7 +28,7 @@ const CoachingPage = () => {
             Whether you are looking to perfect some skills, gain confidence, increase stamina or raise your game, we can help by carefully analyzing your personal goals, skill set and potential, and design a program that is safe, effective and specific to you. 
           </p>
         </Slide>
-        <Fade>
+        <Fade fraction={0.25} duration={2000} damping={0.5}>
           <Image src={coaching2} className='w-full h-full rounded-none sm:rounded-xl mx-auto my-8 max-w-5xl' alt='Image 1'/>
         </Fade>
       </section>
@@ -52,7 +52,7 @@ const CoachingPage = () => {
         </Slide>
       </section>
 
-      <Fade>
+      <Fade fraction={0.25} duration={2000} damping={0.5}>
         <Image src={coaching5} className='w-full h-full rounded-none sm:rounded-xl mx-auto my-8 max-w-5xl' alt='Image 1'/>
       </Fade>
 
@@ -75,7 +75,7 @@ const CoachingPage = () => {
         </Slide>
       </section>
 
-      <Fade className="my-16">
+      <Fade fraction={0.25} duration={2000} damping={0.5} className="my-16">
         <Image src={coaching4} className='w-full h-full rounded-none sm:rounded-xl mx-auto my-8 max-w-5xl' alt="Coaching image w-full h-full "/>
       </Fade>
     </div>
