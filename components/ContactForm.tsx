@@ -12,7 +12,7 @@ type Inputs = {
 }
 
 const ContactForm = () => {
-  const {register, handleSubmit } = useForm<Inputs>();
+  const {register, handleSubmit, formState: { errors } } = useForm<Inputs>();
   const [message, setMessage] = useState("");
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
@@ -46,29 +46,41 @@ const ContactForm = () => {
 
   return (
     <form className="" onSubmit={handleSubmit(onSubmit)}>
-      <div className="flex items-center my-4 flex-wrap">
+      <div className="flex items-center mt-4 mb-2 flex-wrap">
         <label className="basis-32 max-w-[100px] flex-1">
           Name
         </label>
-        <input className="text-black w-full p-2 flex-1 basis-64 bg-gray-200 rounded-md" {...register("name")}/>        
+        <input required className="text-black w-full p-2 flex-1 basis-64 bg-gray-200 rounded-md" {...register("name")}/>        
       </div>
-      <div className="flex items-center my-4 flex-wrap">
+      <div className="mt-2 mb-4">
+        {errors.name && errors.name.message}
+      </div>
+      <div className="flex items-center mt-4 mb-2 flex-wrap">
         <label className="basis-32 max-w-[100px] flex-1">
           Phone
         </label>
-        <input className="text-black w-full p-2 flex-1 basis-64 bg-gray-200 rounded-md" {...register("phone")}/>        
+        <input required className="text-black w-full p-2 flex-1 basis-64 bg-gray-200 rounded-md" {...register("phone")}/>        
       </div>
-      <div className="flex items-center my-4 flex-wrap">
+      <div className="mt-2 mb-4">
+        {errors.phone && errors.phone.message}
+      </div>
+      <div className="flex items-center mt-4 mb-2 flex-wrap">
         <label className="basis-32 max-w-[100px] flex-1">
           Email
         </label>
-        <input className="text-black w-full p-2 flex-1 basis-64 bg-gray-200 rounded-md" {...register("email")}/>        
+        <input required className="text-black w-full p-2 flex-1 basis-64 bg-gray-200 rounded-md" {...register("email")}/>        
       </div>
-      <div className="flex items-center my-4 flex-wrap">
+      <div className="mt-2 mb-4">
+        {errors.email && errors.email.message}
+      </div>
+      <div className="flex items-center mt-4 mb-2 flex-wrap">
         <label className="basis-32 max-w-[100px] flex-1">
           Message
         </label>
-        <textarea className="text-black w-full flex-1 basis-64 p-2 bg-gray-200 rounded-md" rows={3} {...register("message")}/>        
+        <textarea required className="text-black w-full flex-1 basis-64 p-2 bg-gray-200 rounded-md" rows={3} {...register("message")}/>        
+      </div>
+      <div className="mt-2 mb-4">
+        {errors.message && errors.message.message}
       </div>
       <div className="flex justify-center">
         <Button type="submit">Submit</Button>
