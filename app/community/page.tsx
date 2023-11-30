@@ -34,7 +34,7 @@ const CommunityPage = () => {
 
       <section className='my-12'>
         <Slide direction='left'>
-          <p className='text-xl md:text-2xl my-8 max-w-5xl'> In the spirit of community development, promoting progress, inclusiveness and overall positive societal change are central to our activities and  the following are our ongoing initiatives which would continue to be mainstay annual projects with open collaborations, partnerships, and sponsorship.</p>
+          <p className='text-xl md:text-2xl my-8'> In the spirit of community development, promoting progress, inclusiveness and overall positive societal change are central to our activities and  the following are our ongoing initiatives which would continue to be mainstay annual projects with open collaborations, partnerships, and sponsorship.</p>
         </Slide>
         <Fade fraction={0.25} duration={2000} damping={0.5}>
           <Image src={community7} alt="Image 1" className="w-full max-w-2xl h-auto mx-auto my-4"/>
